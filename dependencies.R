@@ -3,7 +3,7 @@ install_missing <- function(pkgs, repos) {
   if (length(missing_pkgs) > 0) install.packages(missing_pkgs, repos = repos)
 }
 
-pkg_list <- c("tidyr", "dplyr", "RSQLite", "sp", "rgdal", "rgeos",
+pkg_list <- c("tidyr", "dplyr", "sp", "rgdal", "rgeos",
               "raster", "shiny", "shinythemes", "leaflet")
 
 # install.packages("raster", repos = "http://cran.us.r-project.org")
@@ -11,7 +11,6 @@ install_missing(pkg_list, repos = "http://cran.us.r-project.org")
 
 library(tidyr)
 library(dplyr)
-library(RSQLite)
 library(sp)
 library(rgdal)
 library(rgeos)
