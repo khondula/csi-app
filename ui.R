@@ -1,14 +1,5 @@
+source("dependencies.R")
 species <- read.csv("Data/species.csv", stringsAsFactors = FALSE)
-library(tidyr)
-library(dplyr)
-library(RSQLite)
-library(sp)
-library(rgdal)
-library(rgeos)
-library(raster)
-library(shiny)
-library(shinythemes)
-library(leaflet)
 # ui.R
 
 navbarPage("csi app", theme = shinytheme("journal"),
